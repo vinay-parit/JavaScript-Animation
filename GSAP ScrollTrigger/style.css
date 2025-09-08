@@ -8,23 +8,29 @@ body {
   height: 100%;
   width: 100%;
 }
-.page1, .page2, .page3{
-    height: 100vh;
-    width: 100%;
+.page1,
+.page2,
+.page3 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.page1{
-    background-color: magenta;
+.page1 {
+  background-color: magenta;
 }
-.page2{
-    background-color: beige;
+.page2 {
+  background-color: beige;
 }
-.page3{
-    background-color: lightcoral;
+.page3 {
+  background-color: lightcoral;
 }
 
-.box {
-  height: 200px;
-  width: 200px;
+.circle {
+  height: 300px;
+  width: 300px;
   background-color: crimson;
+  border-radius: 50%;
 }

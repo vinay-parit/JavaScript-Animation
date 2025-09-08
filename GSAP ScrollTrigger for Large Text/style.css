@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.page1, .page2, .page3{
+    height: 100%;
+    width: 100%;
+}
+.page1{
+    background-color: beige;
+}
+
+.page2{
+    background-color: aliceblue;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.page2 h1{
+    font-size: 42rem;
+}
+
+.page3{
+    background-color: rgb(56, 98, 98);
+}
