@@ -31,9 +31,6 @@ ScrollTrigger.scrollerProxy(".locomotive", {
 });
 
 
-
-
-
 gsap.to(".page1 .box", {
     duration:2,
     delay:1,
@@ -51,7 +48,7 @@ gsap.to(".page2 .box", {
     trigger:".page2 .box",
     scroller:".locomotive",
     start:"top 20%",
-    end:"top 0%",
+    end:"top 10%",
     scrub:2,
     markers:true,
     pin:true
