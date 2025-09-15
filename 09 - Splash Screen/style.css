@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+   font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+.splash {
+  height: 100vh;
+  width: 100%;
+  background-color: beige;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.splash h1 {
+  font-size: 7rem;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(212, 164, 164);
+  display: none;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.3rem 4rem;
+}
+
+.menu-head {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-head li {
+  list-style: none;
+}
+.menu-head li:hover {
+  border-bottom: 2px solid crimson;
+}
+
+.menu-head li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.btn-menu-ct {
+  padding: 7px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: lightcyan;
+}
+
+.btn-menu-ct a {
+  text-decoration: none;
+  color: #000;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hero h1{
+      font-size: 5rem;
+}
+
+.hero h1 span{
+      position: relative;
+      top: -35%;
+      font-size: 1rem;
+      font-weight: 300;
+}
+
+/* MOUSE MAGNET */
+
+.mouse-magnet {
+  position: fixed; /* stays relative to viewport */
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background: crimson;
+  border-radius: 50%;
+  z-index: 9999; /* higher than nav, main, etc */
+  pointer-events: none; /* prevents blocking clicks */
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
+}
