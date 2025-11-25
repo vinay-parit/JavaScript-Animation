@@ -31,3 +31,4 @@ gsap.to(splash, {
     );
   },
 });
+
