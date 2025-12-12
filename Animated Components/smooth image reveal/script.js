@@ -1,5 +1,5 @@
-import Lenis from "lenis"
-import gsap from "gsap"
+// import Lenis from "lenis"
+// import gsap from "gsap"
 
 // import ( ScrollTrigger ) from "gsap/ScrollTrigger"
 
@@ -29,7 +29,7 @@ rows.forEach((row,index) =>{
         trigger: row,
         start: "top 100%",
         end: "bottom bottom",
-        markers: true,
+        // markers: true,
         onUpdate: self =>{
             gsap.set(images, {scale: self.progress})
         }
@@ -42,7 +42,7 @@ rows.forEach((row,index) =>{
        end: "bottom top",
        pin: true,
        pinSpacing: false,
-       markers: true,
+    //    markers: true,
        onUpdate: (self) => {
          gsap.set(images, { scale: 1- self.progress });
        },

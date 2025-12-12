@@ -15,7 +15,7 @@ const sections = [...document.querySelectorAll(".parallax-section")];
 sections.forEach(section =>{
     const img = section.querySelector("img");
 
-    gsap.fromTO(
+    gsap.fromTo(
       img,
       {
         yPercent: -30,
@@ -23,7 +23,7 @@ sections.forEach(section =>{
       {
         yPercent: 30,
         ease: "none",
-        scrollTrigger:{
+        scrollTrigger: {
             Trigger: section,
             markers: true, 
             scrub: true,
@@ -47,5 +47,4 @@ function smoothScroll() {
       lenis.raf(time * 1000);
     });
     gsap.ticker.lagSmoothing(0);
-
 }
